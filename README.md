@@ -142,7 +142,7 @@ algorithm.std_normalizer=False \
 # The weight of dcoupled control token loss. A higher value will lead to rapid convergeence of mode selection.
 actor_rollout_ref.actor.thinkless_alpha=0.001 \ 
 # Increase this if you want to encourage thinking mode
-thinkless_rewards.correct_think_reward=0.45 \ 
+thinkless_rewards.correct_think_reward=0.5 \ 
 ```
 
 
