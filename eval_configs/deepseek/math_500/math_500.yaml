@@ -1,0 +1,39 @@
+dataset_name: default
+dataset_path: HuggingFaceH4/MATH-500
+doc_to_target: '{{answer}}'
+#doc_to_text: "A conversation between User and Assistant. The user asks a question, and the Assistant solves it. The assistant first thinks about the reasoning process in the mind and then provides the user with the answer. The reasoning process and answer are enclosed within <think> </think> and <answer> </answer> tags, respectively, i.e., <think> reasoning process here </think> <answer> answer here </answer>. User: {{problem}}\nAssistant:"
+doc_to_text: "Please reason step by step, and put your final answer within \\boxed{}.\n{{problem}}"
+filter_list:
+- filter:
+  - function: regex
+    regex_pattern: '\\boxed{(.*?)}|\\boxed{\\text{(.*?)}}|answer is (.*?)|answer should be (.*?)'
+  - function: take_first
+  name: strict-match
+generation_kwargs:
+  until:
+  - <｜end▁of▁sentence｜>
+  - <|im_end|>
+  do_sample: true
+  temperature: 0.6
+  top_p: 0.95
+  max_gen_toks: 32768
+tag:
+- chain_of_thought
+metadata:
+  version: 3.0
+metric_list:
+- aggregation: mean
+  higher_is_better: true
+  ignore_case: true
+  ignore_punctuation: false
+  metric: exact_match
+  regexes_to_ignore:
+  - ','
+  - \$
+  - '(?s).*#### '
+  - \.$
+num_fewshot: 0
+output_type: generate_until
+repeats: 1
+task: math_500
+test_split: test

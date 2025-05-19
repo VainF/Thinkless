@@ -1,0 +1,36 @@
+dataset_path: Idavidrein/gpqa
+tag: gpqa
+dataset_name: gpqa_main
+task: gpqa_main_cot_zeroshot
+output_type: generate_until
+process_docs: !function utils.process_docs
+training_split: train
+# Because huggingface dataset only has train split
+validation_split: train
+test_split: null
+doc_to_text: "What is the correct answer to this question:{{Question}}\nChoices:\n(A) {{choice1}}\n(B) {{choice2}}\n(C) {{choice3}}\n(D) {{choice4}}\nLet's think step by step: "
+doc_to_target: answer
+filter_list:
+  - name: "multi_choice_regex"
+    filter:
+      - function: "multi_choice_regex"
+        group_select: -1
+        ignore_case: true
+        ignore_punctuation: true
+        regex_pattern: "\\\\boxed\\{\\(?([A-D])\\)?\\}|\\\\boxed\\{\\\\text\\{\\(?([A-D]\\)?)\\}\\}|answer is \\(?([A-D])\\)?|answer should be ([A-D])|\\(([A-D])\\)"
+      - function: "take_first"
+generation_kwargs:
+  until:
+  - <｜end▁of▁sentence｜>
+  do_sample: false
+  temperature: 0
+  max_gen_toks: 10240
+num_fewshot: 0
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_case: true
+    ignore_punctuation: true
+metadata:
+  version: 1.0
