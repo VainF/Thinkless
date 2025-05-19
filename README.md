@@ -154,10 +154,10 @@ thinkless_rewards.correct_think_reward=0.5 \
 
 
 ## TODO List
-1. [] Add Resume Training
-2. [] RL on larger-scale datasets (In Progress)
-3. [] 7B model
-4. [] Code for warmup
+1. [ ] Add Resume Training
+2. [ ] RL on larger-scale datasets (In Progress)
+3. [ ] 7B model
+4. [ ] Code for warmup
 
 ## Case Study
 
