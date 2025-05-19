@@ -112,11 +112,11 @@ print(f"Number of tokens: {num_tokens}")
 
 
 ### 0. Evaluate the pre-trained model (Optional)
-We only use LM-Eval for generation but do not use the built-in answer extractor. Instead, we an [evaluation tool](scripts/eval) based on the [openai/simple-evals](https://github.com/openai/simple-evals).
+We only use LM-Eval for generation but do not use the built-in answer extractor. Instead, we use an [evaluation tool](scripts/eval) based on the [openai/simple-evals](https://github.com/openai/simple-evals).
 ```bash
 bash run_eval.sh
 ```
-The evaluation results will be saved in a sub-folder under `eval_results`. To obtain the results, you can run the following command:
+The evaluation results will be saved in a subfolder under `eval_results`. To obtain the results, you can run the following command:
 ```bash
 bash scripts/eval/eval_all.sh YOUR_MODEL_PATH THE_EVAL_RESULTS_PATH
 ```
@@ -145,7 +145,7 @@ We can tune the following hyperparameters in [`scripts/rl/thinkless_1.5b_deepsca
 ```bash
 # Whether to enable std normalization in advantage computing (False for Dr. GRPO)
 algorithm.std_normalizer=False \ 
-# The weight of dcoupled control token loss. A higher value will lead to rapid convergeence of mode selection.
+# The weight of dcoupled control token loss. A higher value will lead to rapid convergence of mode selection.
 actor_rollout_ref.actor.thinkless_alpha=0.001 \ 
 # Increase this if you want to encourage thinking mode
 thinkless_rewards.correct_think_reward=0.5 \ 
