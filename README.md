@@ -16,10 +16,6 @@
       <td><a href="https://arxiv.org/abs/">ArXiv</a></td>
     </tr>
     <tr>
-      <td>💻 <strong>GitHub</strong></td>
-      <td><a href="https://github.com/VainF/Thinkless">VainF/Thinkless</a></td>
-    </tr>
-    <tr>
       <td>🤖 <strong>RL Model</strong></td>
       <td><a href="https://huggingface.co/Vinnnf/Thinkless-1.5B-RL-DeepScaleR">Thinkless-1.5B-RL-DeepScaleR</a></td>
     </tr>
