@@ -123,7 +123,7 @@ bash scripts/eval/eval_all.sh YOUR_MODEL_PATH THE_EVAL_RESULTS_PATH
 ```
 For example, to evaluate the results under *eval_results/Vinnnf__Thinkless-1.5B-RL-DeepScaleR*, run the following command:
 ```bash
-bash scripts/eval/eval_all.sh Vinnnf/Thinkless-1.5B-RL-DeepScaleR outputs/eval_results/Vinnnf__Thinkless-1.5B-RL-DeepScaleR
+bash scripts/eval/eval_all.sh Vinnnf/Thinkless-1.5B-RL-DeepScaleR eval_results/Vinnnf__Thinkless-1.5B-RL-DeepScaleR
 ```
 
 ## RL Training
