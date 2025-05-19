@@ -24,7 +24,7 @@
     </tr>
     <tr>
       <td>📊 <strong>Data for Warmup</strong></td>
-      <td><a href="https://huggingface.co/datasets/Vinnnf/Hybrid-OpenThoughts-1M-1.5B">Hybrid-OpenThoughts-1M-1.5B</a></td>
+      <td><a href="https://huggingface.co/datasets/Vinnnf/Hybrid-OpenThoughts2-1M-1.5B">Hybrid-OpenThoughts2-1M-1.5B</a></td>
     </tr>
     <tr>
       <td>📊 <strong>Data for RL</strong></td>
@@ -244,7 +244,15 @@ Checking the next perfect cubes (64, 125, etc.) confirms they do not yield integ
 \]
 ```
 
-# Bibtex
+## Acknowledgements
+
+* The RL part is based on the [agentica-project/rllm](https://github.com/agentica-project/rllm) (Previously named DeepScaleR).
+* The warmup training is powered by [Megatron-LM](https://github.com/NVIDIA/Megatron-LM). We will release the a llama-factory version in the future.
+* The following datasets are used in our experiments:
+  * [DeepScaleR](https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset): For RL training.
+  * [OpenThoughts2-1M](https://huggingface.co/datasets/open-thoughts/OpenThoughts2-1M/viewer/default/train?views%5B%5D=train): For warmup training.
+
+## Bibtex
 If you find this repository helpful, please consider citing our work:
 ```bibtex
 ```
