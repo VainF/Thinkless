@@ -39,6 +39,12 @@
 
 We propose Thinkless, a learnable framework that empowers an LLM to adaptively select between short-form and long-form reasoning, based on both task complexity and the model's ability. Thinkless is trained under a reinforcement learning paradigm and employs two control tokens, \<short\> for concise responses and \<think\> for detailed reasoning. At the core of our method is a Decoupled Group Relative Policy Optimization (DeGRPO) algorithm, which decomposes the learning objective of hybrid reasoning into two components: (1) a control token loss that governs the selection of the reasoning mode, and (2) a response loss that improves the accuracy of the generated answers. This decoupled formulation enables fine-grained control over the contributions of each objective, stabilizing training and effectively preventing collapse observed in vanilla GRPO. Empirically, on several benchmarks such as Minerva Algebra, MATH-500, and GSM8K, Thinkless is able to reduce the usage of long-chain thinking by 50\% - 90\%, significantly improving the computational efficiency of Reasoning Language Models.
 
+## The Full Pipeline
+
+![full_pipeline](https://github.com/user-attachments/assets/468c89da-80f4-4b95-9829-7b81f7f303e2)
+
+
+
 ## Installation
 
 ```bash
@@ -106,11 +112,11 @@ print(f"Number of tokens: {num_tokens}")
 
 
 ### 0. Evaluate the pre-trained model (Optional)
-We only use LM-Eval for generation but do not use the built-in answer extractor. Instead, we an [evaluation tool](scripts/eval) based on the [openai/simple-evals](https://github.com/openai/simple-evals).
+We only use LM-Eval for generation but do not use the built-in answer extractor. Instead, we use an [evaluation tool](scripts/eval) based on the [openai/simple-evals](https://github.com/openai/simple-evals).
 ```bash
 bash run_eval.sh
 ```
-The evaluation results will be saved in a sub-folder under `eval_results`. To obtain the results, you can run the following command:
+The evaluation results will be saved in a subfolder under `eval_results`. To obtain the results, you can run the following command:
 ```bash
 bash scripts/eval/eval_all.sh YOUR_MODEL_PATH THE_EVAL_RESULTS_PATH
 ```
@@ -139,7 +145,7 @@ We can tune the following hyperparameters in [`scripts/rl/thinkless_1.5b_deepsca
 ```bash
 # Whether to enable std normalization in advantage computing (False for Dr. GRPO)
 algorithm.std_normalizer=False \ 
-# The weight of dcoupled control token loss. A higher value will lead to rapid convergeence of mode selection.
+# The weight of dcoupled control token loss. A higher value will lead to rapid convergence of mode selection.
 actor_rollout_ref.actor.thinkless_alpha=0.001 \ 
 # Increase this if you want to encourage thinking mode
 thinkless_rewards.correct_think_reward=0.5 \ 
@@ -148,10 +154,10 @@ thinkless_rewards.correct_think_reward=0.5 \
 
 
 ## TODO List
-1. [] Add Resume Training
-2. [] RL on larger-scale datasets (In Progress)
-3. [] 7B model
-4. [] Code for warmup
+1. [ ] Add Resume Training
+2. [ ] RL on larger-scale datasets (In Progress)
+3. [ ] 7B model
+4. [ ] Code for warmup
 
 ## Case Study
 
