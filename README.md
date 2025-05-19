@@ -7,12 +7,17 @@
 > *[xML Lab](https://sites.google.com/view/xml-nus), National University of Singapore*
   
 <table>
+<table>
   <thead>
   </thead>
   <tbody>
     <tr>
       <td>📄 <strong>Paper Link</strong></td>
       <td><a href="https://arxiv.org/abs/">ArXiv</a></td>
+    </tr>
+    <tr>
+      <td>💻 <strong>GitHub</strong></td>
+      <td><a href="https://github.com/VainF/Thinkless">VainF/Thinkless</a></td>
     </tr>
     <tr>
       <td>🤖 <strong>RL Model</strong></td>
