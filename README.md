@@ -2,7 +2,7 @@
 
 ![intro](assets/intro.png)
 
-> [**Thinkless: LLM Learns When to Think**]()   
+> [**Thinkless: LLM Learns When to Think**](http://arxiv.org/abs/2505.13379)   
 > *[Gongfan Fang](https://fangggf.github.io/), [Xinyin Ma](https://horseee.github.io/), [Xinchao Wang](https://sites.google.com/site/sitexinchaowang/)*    
 > *[xML Lab](https://sites.google.com/view/xml-nus), National University of Singapore*
   
@@ -13,7 +13,7 @@
   <tbody>
     <tr>
       <td>📄 <strong>Paper Link</strong></td>
-      <td><a href="https://arxiv.org/abs/">ArXiv</a></td>
+      <td><a href="http://arxiv.org/abs/2505.13379">ArXiv</a></td>
     </tr>
     <tr>
       <td>🤖 <strong>RL Model</strong></td>
