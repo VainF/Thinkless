@@ -114,12 +114,14 @@ print(f"Number of tokens: {num_tokens}")
 
 ## Evaluate the pre-trained model (Optional)
 
+#### LM-Eval
+This script will repeat the generation for 5 times using lm_eval. All results will be saved in `./eval_results`.
 ```bash
 bash run_eval.sh
 ```
 
 #### Extract answers for evaluation
-We only use LM-Eval for generation but do not use the built-in answer extractor. Instead, we use an [evaluation tool](scripts/eval) based on the [openai/simple-evals](https://github.com/openai/simple-evals). The above evaluation results will be saved in a subfolder under `eval_results`. To obtain the metrics, please run the following command:
+We only use LM-Eval for generation but do not use the built-in answer extractor. Instead, we developed an [evaluation tool](scripts/eval) based on the prompts in [openai/simple-evals](https://github.com/openai/simple-evals). To obtain the final metrics, please run the following command:
 ```bash
 bash scripts/eval/eval_all.sh YOUR_MODEL_PATH THE_EVAL_RESULTS_PATH
 ```
