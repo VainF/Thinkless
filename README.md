@@ -266,4 +266,10 @@ Checking the next perfect cubes (64, 125, etc.) confirms they do not yield integ
 ## Bibtex
 If you find this repository helpful, please consider citing our work:
 ```bibtex
+@article{fang2025thinkless,
+  title={Thinkless: LLM Learns When to Think},
+  author={Fang, Gongfan and Ma, Xinyin and Wang, Xinchao},
+  journal={arXiv preprint arXiv:2505.13379},
+  year={2025}
+}
 ```
