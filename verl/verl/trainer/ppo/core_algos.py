@@ -197,7 +197,7 @@ def compute_policy_loss(old_log_prob, log_prob, advantages, eos_mask, cliprange,
     token_loss = torch.max(pg_losses, pg_losses2)
     
 
-    if thinkless_alpha is not None: # Decomposed GRPO
+    if thinkless_alpha is not None: # Decoupled GRPO
         # Masks
         cond_mask = eos_mask.clone()
         cond_mask[:, 1:] = 0                    # only t = 0, the control token
