@@ -142,8 +142,10 @@ DeepScaler data size: 40315
 ```
 
 ### 2. Run the RL script
-> [!NOTE]
-> If you observe slow convergence or bias toward long/short responses, please try to increase the ``correct_think_reward`` (0.5 ~ 0.8) and ``thinkless_alpha`` (0.001 ~ 0.01). 
+> [!TIP]
+> If you observe slow convergence or a bias toward long or short responses, you may try:
+> * increasing ``correct_think_reward`` (0.5 ~ 0.8) to encourage more use of the thinking mode
+> * Increasing ``thinkless_alpha`` (0.001 ~ 0.01) to promote faster mode selection
 
 ```bash
 bash run_train_rl.sh
