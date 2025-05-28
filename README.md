@@ -142,15 +142,17 @@ DeepScaler data size: 40315
 ```
 
 ### 2. Run the RL script
+> [!NOTE]
+> If you observe slow convergence or bias toward long/short responses, please try to increase the ``correct_think_reward`` (0.5 ~ 0.8) and ``thinkless_alpha`` (0.001 ~ 0.01). 
+
 ```bash
 bash run_train_rl.sh
 ```
-
 We can tune the following hyperparameters in [`scripts/rl/thinkless_1.5b_deepscaler.sh`](scripts/rl/thinkless_1.5b_deepscaler.sh) to obtain a good performance.
 ```bash
 # Whether to enable std normalization in advantage computing (False for Dr. GRPO)
 algorithm.std_normalizer=False \ 
-# The weight of dcoupled control token loss. A higher value will lead to rapid convergence of mode selection.
+# The weight of decoupled control token loss. A higher value will lead to rapid convergence of mode selection.
 actor_rollout_ref.actor.thinkless_alpha=0.001 \ 
 # Increase this if you want to encourage thinking mode
 thinkless_rewards.correct_think_reward=0.5 \ 
