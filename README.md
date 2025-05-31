@@ -57,6 +57,8 @@ cd Thinkless
 pip install torch==2.4.0 lm_eval==0.4.8 ray==2.45.0 # install lm_eval before verl to avoid conflict
 pip install -e ./verl
 pip install -e .
+# https://github.com/vllm-project/vllm/issues/4392
+pip install nvidia-cublas-cu12==12.4.5.8
 ```
 
 
