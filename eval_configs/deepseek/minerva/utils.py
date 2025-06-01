@@ -15,7 +15,7 @@ eval_logger = logging.getLogger(__name__)
 def doc_to_text(doc: dict) -> str:
     problem = doc["problem"]
     instruct = "Please reason step by step, and put your final answer within \\boxed{}"
-    return f"{problem}\n{instruct}"
+    return f"{instruct}\n{problem}"
 
 def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:
     def _process_doc(doc: dict) -> dict:
