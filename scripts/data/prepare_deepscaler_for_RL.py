@@ -53,7 +53,7 @@ def prepare_deepscaler():
             }
         }
         data_items.append(data)
-    random.shuffle(data_items)
+    #random.shuffle(data_items)
     print(data_items[:10])
     return data_items
 
