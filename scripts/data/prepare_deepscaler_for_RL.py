@@ -53,7 +53,7 @@ def prepare_deepscaler():
             }
         }
         data_items.append(data)
-    #random.shuffle(data_items)
+    random.shuffle(data_items)
     print(data_items[:10])
     return data_items
 
@@ -98,6 +98,9 @@ if __name__ == '__main__':
     parser.add_argument('--hdfs_dir', default=None,
                        help='Optional HDFS directory to copy datasets to')
     args = parser.parse_args()
+
+
+    random.seed(0)
 
     local_dir = args.local_dir
     hdfs_dir = args.hdfs_dir
