@@ -162,6 +162,14 @@ actor_rollout_ref.actor.thinkless_alpha=0.001 \
 thinkless_rewards.correct_think_reward=0.5 \ 
 ```
 
+### 3. Reproducibility
+
+The RL script is able to reproduce the U-shape learning curve. Here we only test this code for 200 steps, you can extend the training steps to 600 for better performance.
+<div align="left">
+<img src="https://github.com/user-attachments/assets/58a07a7a-2c33-47ce-847c-a69414aa0648" width="20%">
+</div>
+
+
 
 
 ## TODO List
