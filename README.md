@@ -16,7 +16,7 @@
       <td><a href="http://arxiv.org/abs/2505.13379">ArXiv</a></td>
     </tr>
     <tr>
-      <td>📄 <strong>SFT Code</strong></td>
+      <td>💻 <strong>SFT Code</strong></td>
       <td><a href="https://github.com/VainF/Reasoning-SFT">VainF/Reasoning-SFT</a></td>
     </tr>
     <tr>
