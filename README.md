@@ -16,6 +16,10 @@
       <td><a href="http://arxiv.org/abs/2505.13379">ArXiv</a></td>
     </tr>
     <tr>
+      <td>📄 <strong>SFT Code</strong></td>
+      <td><a href="https://github.com/VainF/Reasoning-SFT">VainF/Reasoning-SFT</a></td>
+    </tr>
+    <tr>
       <td>🤖 <strong>RL Model</strong></td>
       <td><a href="https://huggingface.co/Vinnnf/Thinkless-1.5B-RL-DeepScaleR">Thinkless-1.5B-RL-DeepScaleR</a></td>
     </tr>
