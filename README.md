@@ -189,7 +189,7 @@ The RL script is able to reproduce the U-shape learning curve. Here we only test
 1+1=?
 ```
 
-**Thinkless-1.5B:**  
+**Thinkless-1.5B (99 Tokens):**  
 ```
 <short>
 To solve the problem \(1 + 1\), we will follow a step-by-step approach:
@@ -201,7 +201,7 @@ To solve the problem \(1 + 1\), we will follow a step-by-step approach:
 So, the final answer is \(\boxed{2}\).
 ```
 
-**DeepSeek-R1:**   
+**DeepSeek-R1 (376 Tokens):**   
 ```
 Okay, so I need to figure out what 1 plus 1 equals. Let me start by thinking about basic addition. When you add two numbers together, you're combining their values. So if I have one apple and someone gives me another apple, how many apples do I have in total? That should be two apples.
 
@@ -218,6 +218,72 @@ The sum of 1 and 1 is calculated as follows:
 1 + 1 = 2
 
 In decimal arithmetic, adding the numbers 1 and 1 results in the number 2.
+```
+
+**DeepSeek-R1-Distill-Qwen-1.5B (1359 Tokens):**
+```
+<think>
+Okay, so I have this simple math problem here: 1 + 1 = ? Hmm, that seems straightforward, but I guess I should think about it carefully to make sure I'm not missing anything. Let me try to visualize it.
+
+First, I know that 1 is just one unit or object. So if I have one apple and someone gives me another apple, how many apples do I have now? Well, I should count them: one, two. So that would make it 2 apples. So, 1 + 1 equals 2. That seems right.
+
+But wait, is there another way to think about this? Maybe using objects or fingers? Let me try using my fingers. If I hold up one finger and then another finger, how many fingers am I up on? One, two. Yep, that's 2 again. So that's consistent with my earlier thought.
+
+Alternatively, maybe I can use my knowledge of numerals. I know that in the decimal system, each numeral represents a certain value. The numeral 1 represents one, and when you add another 1, you're just moving one more step in the counting sequence. So 1 comes after 0, and then 1 again, and so on. So, 1 plus 1 lands me at 2.
+
+Wait, let me think about this in terms of quantities. If I have a set of objects, say two apples, and someone removes one apple, how many are left? That would be 1. So, if I had 1 apple and someone gave me another, I'd have 2. That seems to confirm it.
+
+Is there a different perspective? Maybe using number lines. If I start at 1 and move one unit to the right on the number line, I end up at 2. So, that's another way to visualize addition. 1 + 1 = 2 because moving from 1 to 2 is adding one more.
+
+I also remember in basic arithmetic, addition is commutative, meaning the order doesn't matter. So 1 + 1 is the same as 1 + 1, which is 2. If I switch them around, 1 + 1 is still 2, so that doesn't change anything.
+
+What about if I use different representations? Like, in Roman numerals, 1 is I, and 2 is II. So, I + I would be II, which is 2. That's another way to confirm it.
+
+Wait, maybe I can think about it in terms of equations. If I have an equation: 1 + 1 = x. To solve for x, I can subtract 1 from both sides, so x = 1 + 1 - 1, which simplifies to x = 1. But that doesn't make sense because 1 + 1 is 2, not 1. Maybe I made a mistake in the algebra.
+
+Let me try again. If I have 1 + 1 = x, then subtracting 1 from both sides would give me x = 1. That can't be right because 1 + 1 is definitely 2. So maybe I can't solve it that way. Maybe I need to use a different approach.
+
+Alternatively, maybe I can use the concept of sets. If I have one set with one object and another set with one object, combining them gives me two objects. So, the union of two single-element sets has two elements. Therefore, 1 + 1 equals 2.
+
+I guess another way to think about it is through counting. If I count one thing and then another, I have two in total. So, 1 (first) + 1 (second) = 2 (total). That makes sense.
+
+Is there a real-world example that could help solidify this? Sure. If I have a dollar and I add another dollar, I have $2. So, 1 dollar plus 1 dollar equals 2 dollars. That's a practical application of addition.
+
+What if I use money again? If I have one quarter and I add another quarter, I have 50 cents plus 50 cents, which is 100 cents, or a dollar. So, 1 + 1 = 2 in terms of value. That works too.
+
+Maybe I can also think about it in terms of shapes or objects. If I have one square and another square, how many squares do I have? Two squares. So, 1 + 1 = 2. That's another visual confirmation.
+
+I guess I'm overcomplicating it, but better safe than sorry. Let me try to recall if I've heard this problem before. I think it's a basic arithmetic problem that's been used in various educational settings. It's often used to introduce the concept of addition for young learners.
+
+In summary, through multiple perspectives—counting, using number lines, Roman numerals, set theory, real-world examples, and even different mathematical concepts like commutativity—it consistently points to 1 + 1 = 2. I can't see any other possible answer because the fundamental operations of addition and counting lead to that result.
+
+So, after thinking it through in so many different ways, I feel confident that 1 + 1 equals 2.
+
+**Final Answer**
+The result of 1 + 1 is \boxed{2}.
+</think>
+
+To solve the problem \(1 + 1\), we can approach it from various perspectives:
+
+1. **Counting Objects**: If we have one object and add another, we count them: one, two. Thus, \(1 + 1 = 2\).
+
+2. **Number Lines**: Starting at 1 and moving one unit to the right on the number line lands us at 2. Hence, \(1 + 1 = 2\).
+
+3. **Roman Numerals**: In Roman numerals, I (1) + I (1) equals II (2).
+
+4. **Set Theory**: Combining two single-element sets results in a set with two elements, so \(1 + 1 = 2\).
+
+5. **Real-World Examples**: Adding two dollars gives a total of two dollars, demonstrating \(1 + 1 = 2\).
+
+6. **Commutative Property**: Since addition is commutative, \(1 + 1 = 1 + 1 = 2\).
+
+Through multiple perspectives, the result is consistently 2.
+
+### Final Answer
+The result of \(1 + 1\) is \boxed{2}.
+
+
+Number of tokens: 1359
 ```
 
 ---
