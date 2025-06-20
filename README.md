@@ -201,7 +201,7 @@ To solve the problem \(1 + 1\), we will follow a step-by-step approach:
 So, the final answer is \(\boxed{2}\).
 ```
 
-**DeepSeek-R1 (376 Tokens):**   
+**DeepSeek-R1 671B (376 Tokens):**   
 ```
 Okay, so I need to figure out what 1 plus 1 equals. Let me start by thinking about basic addition. When you add two numbers together, you're combining their values. So if I have one apple and someone gives me another apple, how many apples do I have in total? That should be two apples.
 
