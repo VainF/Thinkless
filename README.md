@@ -149,7 +149,7 @@ DeepScaler data size: 40315
 
 ### 2. Run the RL script
 > [!TIP]
-> We found that this implementation achieves higher accuracy on short responses and favors conciseness. To encourage more use of the thinking mode, consider increasing correct_think_reward (e.g., from 0.5 to 0.8) and resuming training from your latest checkpoint.
+> We found that this implementation achieves higher accuracy on short responses and favors conciseness. If this happens, consider increasing correct_think_reward (e.g., from 0.5 to 0.8) and resuming training from your latest checkpoint.
 
 ```bash
 bash run_train_rl.sh
