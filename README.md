@@ -171,6 +171,11 @@ export MODEL_PATH="PATH_TO_YOUR_MODEL"
 ./scripts/rl/thinkless_1.5b_deepscaler.sh --model $MODEL_PATH
 ```
 
+It's also recommended to have a new exp name in `scripts/rl/thinkless_1.5b_deepscaler.sh`:
+```
+trainer.experiment_name='Thinkless-1.5b-DeepScaleR-Resume' \
+```
+
 ### 3. Reproducibility
 
 The RL script is able to reproduce the U-shape learning curve. Here we only test this code for 200 steps, you can extend the training steps to 600 for better performance.
