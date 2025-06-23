@@ -164,6 +164,13 @@ actor_rollout_ref.actor.thinkless_alpha=0.001 \
 thinkless_rewards.correct_think_reward=0.5 \ 
 ```
 
+#### Resume
+You can resume training from a checkpoint by modifying the `run_train_rl.sh`:
+```bash
+export MODEL_PATH="PATH_TO_YOUR_MODEL"
+./scripts/rl/thinkless_1.5b_deepscaler.sh --model $MODEL_PATH
+```
+
 ### 3. Reproducibility
 
 The RL script is able to reproduce the U-shape learning curve. Here we only test this code for 200 steps, you can extend the training steps to 600 for better performance.
