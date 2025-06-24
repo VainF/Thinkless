@@ -148,9 +148,6 @@ DeepScaler data size: 40315
 ```
 
 ### 2. Run the RL script
-> [!TIP]
-> We found that this implementation achieves higher accuracy on short responses and favors conciseness. If this happens, consider increasing correct_think_reward (e.g., from 0.5 to 0.8) and resuming training from your latest checkpoint.
-
 ```bash
 bash run_train_rl.sh
 ```
@@ -177,6 +174,8 @@ trainer.experiment_name='Thinkless-1.5b-DeepScaleR-Resume' \
 ```
 
 ### 3. Reproducibility
+> [!TIP]
+> We found that this implementation achieves higher accuracy on short responses and favors conciseness. If this happens, consider increasing correct_think_reward (e.g., from 0.5 to 0.8) and resuming training from your latest checkpoint.
 
 The RL script is able to reproduce the U-shape learning curve. Here we only test this code for 200 steps, you can extend the training steps to 600 for better performance.
 <div align="left">
