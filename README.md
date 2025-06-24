@@ -183,7 +183,7 @@ The RL script is able to reproduce the U-shape learning curve.
 </div>
 
 Our reproducing results using 300 steps with correct_think_reward=0.5, followed by 180 steps (Resumed) with correct_think_reward=0.8:
-|| AIME 2024 | Minerva | Math-500 | GSM8k |
+|| AIME 2024 | Minerva Algebra | Math-500 | GSM8k |
 |:---:| :-----:   | :------:| :------: |:------:|
 |  **Paper** | 0.2733 (100%) | 0.9459 (26%) | 0.8184 (51%) | 0.8418 (13%) |
 | **This Codebase** | 0.2733 (100%) | 0.9483 (23%) | 0.8360 (51%) | 0.8368 (7%) |
