@@ -175,7 +175,7 @@ trainer.experiment_name='Thinkless-1.5b-DeepScaleR-Resume' \
 
 ### 3. Reproducibility
 > [!TIP]
-> We found that this implementation achieves higher accuracy on short responses and favors conciseness. If this happens, consider increasing correct_think_reward (e.g., from 0.5 to 0.8) and resuming training from your latest checkpoint.
+> We found that this implementation achieves higher accuracy on short responses and favors conciseness. If this happens, consider increasing correct_think_reward (e.g., from 0.5 to 0.7 or 0.8) and resuming training from your latest checkpoint.
 
 The RL script is able to reproduce the U-shape learning curve. 
 <div align="left">
